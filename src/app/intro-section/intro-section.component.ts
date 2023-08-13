@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./intro-section.component.scss']
 })
 export class IntroSectionComponent {
+  isNavbarOpen = false;
+  closeMenu = '../../assets//images/icon-close-menu.svg' ;
+  menuOpen= '../../assets//images/icon-menu.svg' ;
+
+  handleAction() {
+    this.isNavbarOpen = !this.isNavbarOpen;
+
+  }
+
+  openFeature :boolean = false ;
+  openComapny : boolean = false
 
 }
